@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art</title>
+
+    <style>
+        img, source{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Art Direction example</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(min-width: 900px)" srcset="images/originaldesk x1.webp 1X">
+            <source media="(min-width: 600px)" srcset="images/originaltab x1.webp 1X">
+            <source media="(min-width: 0px)" srcset="images/originalmob x1.webp 1X">
+            <img src="images/originaldesk x1.webp">
+        </picture>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
